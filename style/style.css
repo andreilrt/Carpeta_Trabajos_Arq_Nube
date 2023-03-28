@@ -1,10 +1,94 @@
-body{
-    background-color: tomato;
+body {
+    background-color: cyan;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+header {
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.login input {
+    margin-right: 5px;
+}
+
+.login-btn, .signup-btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.signup-btn {
+    margin-left: 5px;
+}
+
+.forgot-password {
+    display: block;
+    font-size: 12px;
+    text-align: right;
+}
+
+nav {
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.bets-image {
+    width: 45%;
+}
+
 p {
-    color: aqua;
+    width: 45%;
 }
-h1{
-    color: black;
+
+.horizontal-bar {
+    background-color: orange;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sports {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sports img {
+    width: 30%;
+}
+
+footer {
+    background-color: lightgray;
+    padding: 10px;
     text-align: center;
 }
