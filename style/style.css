@@ -207,7 +207,7 @@ label {
     margin: 10px 0;
 }
 
-#first-name, #last-name, #password, #email,
+#first-name, #last-name, #password, #email, #address,
 input[type="tel"],
 input[type="date"],
 select {
