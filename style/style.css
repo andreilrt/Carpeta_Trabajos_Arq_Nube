@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(61, 107, 214);
+    background-color: #328F9F;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -15,6 +15,32 @@ header {
 
 .logo img {
     width: 150px;
+}
+
+.logo {
+    transition: all 0.3s;
+}
+
+@keyframes rotateAndJump {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    25% {
+        transform: translateY(-10px) rotate(90deg);
+    }
+    50% {
+        transform: translateY(0) rotate(180deg);
+    }
+    75% {
+        transform: translateY(-10px) rotate(270deg);
+    }
+    100% {
+        transform: translateY(0) rotate(360deg);
+    }
+}
+
+.logo:hover {
+    animation: rotateAndJump 1s linear forwards;
 }
 
 .login input {
@@ -38,22 +64,31 @@ header {
     font-size: 12px;
     text-align: right;
 }
+  
+.nav_button {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 nav {
-    background-color: red;
+    background-color: #FF5757;
     display: flex;
-    justify-content: space-around;
+    border: 1px solid black;
 }
 
 nav a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 10px;
     display: inline-block;
 }
 
 nav a:hover {
-    background-color: darkred;
+    background-color: #D83131;
 }
 
 main {
@@ -75,7 +110,7 @@ main {
 
 
 .horizontal-bar {
-    background-color: orange;
+    background-color: #C7633A;
     width: 100%;
     height: 50px;
     display: inline-flex;
@@ -83,13 +118,73 @@ main {
     justify-content: center;
 }
 
-.sports {
-    display: inline-flex;
-    justify-content: center;
+.sports-hor-bar{
+    text-shadow: 
+    -1px -1px 0 #00BF63,
+    1px -1px 0 #00BF63,
+    -1px  1px 0 #00BF63,
+    1px  1px 0 #00BF63
 }
 
-.sports img {
-    width: 33.33%;
+.sports {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0;
+}
+
+.sport-wrapper {
+    width: 33.333%;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.sport-wrapper img {
+    width: 100%;
+}
+
+.sport-wrapper span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    font-weight: bold;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.sport-wrapper:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.sport-wrapper:hover span {
+    text-shadow: 
+    -1px -1px 0 #d03827,
+    1px -1px 0 #d03827,
+    -1px  1px 0 #d03827,
+    1px  1px 0 #d03827;
+    visibility: visible;
+    opacity: 1;
+    z-index: 11;
+}
+
+.sport-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.sport-wrapper:hover::after {
+    opacity: 0.6;
 }
 
 footer {
