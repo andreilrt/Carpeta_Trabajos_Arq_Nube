@@ -234,6 +234,23 @@ button[type="submit"]:hover {
     background-color: #45a049;
 }
 
+.phone-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phone-container label,
+.phone-container select,
+.phone-container input[type="tel"] {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.phone-container input[type="tel"] {
+    margin-right: 0;
+}
+
 footer {
     background-color: lightgray;
     padding: 1px;

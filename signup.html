@@ -51,18 +51,29 @@
             </select>
     
             <label for="address">Dirección</label>
-            <input type="text" id="address">
+            <input type="text" id="address" required>
     
             <label for="email">Contacto*</label>
             <input type="email" id="email" required>
     
-            <label for="phone-prefix">Indicativo móvil</label>
-            <select id="phone-prefix">
-                <!-- Add phone prefixes for each country -->
-            </select>
-    
-            <label for="phone">Número de celular</label>
-            <input type="tel" id="phone">
+            <label for="phone">Contacto*</label>
+            <div class="phone-container">
+                <label for="phone-prefix">Indicativo</label>
+                <select id="phone-prefix">
+                    <option value="+57">+57 (Colombia)</option>
+                    <optgroup label="──────────">
+                        <option value="+1">+1 (USA, Canada)</option>
+                        <option value="+44">+44 (UK)</option>
+                        <option value="+57">+57 (Colombia)</option>
+                        <option value="+34">+34 (Spain)</option>
+                        <option value="+49">+49 (Germany)</option>
+                        <option value="+61">+61 (Australia)</option>
+                        <option value="+91">+91 (India)</option>
+                    </optgroup>
+                </select>
+                <label for="phone">Número de celular</label>
+                <input type="tel" id="phone">
+            </div>
     
             <label for="document-type">Documento*</label>
             <select id="document-type" required>
