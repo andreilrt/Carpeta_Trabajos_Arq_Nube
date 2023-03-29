@@ -209,7 +209,7 @@ label {
     margin: 10px 0;
 }
 
-#first-name, #last-name, #password, #email, #address,#document-number,
+#first-name, #last-name, #password, #email, #address,#document-number,#city,
 input[type="tel"],
 input[type="date"],
 select {
