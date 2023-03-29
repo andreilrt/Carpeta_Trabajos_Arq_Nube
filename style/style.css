@@ -1,5 +1,5 @@
 body {
-    background-color: #328F9F;
+    background-image: url("/static/Fondo.svg");
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -207,7 +207,7 @@ label {
     margin: 10px 0;
 }
 
-#first-name, #last-name, #password, #email, #address,
+#first-name, #last-name, #password, #email, #address,#document-number,
 input[type="tel"],
 input[type="date"],
 select {
